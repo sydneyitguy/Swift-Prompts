@@ -224,7 +224,7 @@ public class SwiftPromptsView: UIView
         return image;
     }
     
-    func dismissPrompt()
+    public func dismissPrompt()
     {
         UIView.animateWithDuration(0.6, animations: {
             self.layer.opacity = 0.0
