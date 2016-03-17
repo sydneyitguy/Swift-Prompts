@@ -195,7 +195,7 @@ public class SwiftPromptsView: UIView
         
         //Apply animation effect to present this view
         let applicationLoadViewIn = CATransition()
-        applicationLoadViewIn.duration = 0.4
+        applicationLoadViewIn.duration = 0.2
         applicationLoadViewIn.type = kCATransitionReveal
         applicationLoadViewIn.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         self.layer.addAnimation(applicationLoadViewIn, forKey: kCATransitionReveal)
@@ -226,7 +226,7 @@ public class SwiftPromptsView: UIView
     
     public func dismissPrompt()
     {
-        UIView.animateWithDuration(0.6, animations: {
+        UIView.animateWithDuration(0.3, animations: {
             self.layer.opacity = 0.0
             }, completion: {
                 (value: Bool) in
@@ -337,7 +337,7 @@ public class SwiftPromptsView: UIView
             if (recognizer.state == UIGestureRecognizerState.Ended)
             {
                 if (shouldDismissPrompt == true) {
-                    UIView.animateWithDuration(0.6, animations: {
+                    UIView.animateWithDuration(0.3, animations: {
                         self.layer.opacity = 0.0
                         self.masterClass.layer.opacity = 0.0
                         }, completion: {

@@ -32,7 +32,7 @@ public class SwiftPrompts : NSObject {
         let _cornerRadius = 12 as CGFloat
         let _cornerRadii = CGSizeMake(_cornerRadius, _cornerRadius)
         let _promptTextRect = CGRectMake(frame.minX + 13,
-                                         frame.minY + 56 + imageHeight + (imageHeight > 0 ? 10 : 0),
+                                         frame.minY + 48 + imageHeight + (imageHeight > 0 ? 10 : 0),
                                          frame.width - 26,
                                          frame.height - 109)
         let _topBarRect = CGRectMake(frame.minX + floor(frame.width * 0.01778 + 0.5),
