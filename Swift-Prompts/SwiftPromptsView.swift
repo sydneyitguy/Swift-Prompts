@@ -134,7 +134,7 @@ public class SwiftPromptsView: UIView
         
         //Add the image if required
         if let imageToAdd = self.image {
-            let imageView = UIImageView(frame: CGRectMake(promptWidth/2 - self.calculatedImageSize.width/2, 60, self.calculatedImageSize.width, self.calculatedImageSize.height))
+            let imageView = UIImageView(frame: CGRectMake(promptWidth/2 - self.calculatedImageSize.width/2, 75, self.calculatedImageSize.width, self.calculatedImageSize.height))
             imageView.image = imageToAdd
             
             swiftPrompt.addSubview(imageView)
